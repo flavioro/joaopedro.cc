@@ -1,18 +1,9 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-const path = require('path');
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
-      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
-    },
+      plugins: [new TsconfigPathsPlugin()]
+    }
   });
 };
-
-exports.onCreateNode = require('./gatsby/onCreateNode');
-exports.createPages = require('./gatsby/createPages');
