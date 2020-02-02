@@ -1,40 +1,41 @@
 module.exports = {
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   extends: [
-    "airbnb",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/typescript",
-    "plugin:prettier/recommended",
-    "prettier/@typescript-eslint"
+    'airbnb',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/typescript',
+    'plugin:prettier/recommended',
+    'prettier/@typescript-eslint',
   ],
-  plugins: ["@typescript-eslint", "prettier", "react-hooks"],
+  plugins: ['@typescript-eslint', 'prettier', 'react-hooks'],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    project: "./tsconfig.json"
+    project: './tsconfig.json',
   },
   env: {
     browser: true,
     jest: true,
-    node: true
+    node: true,
   },
   globals: {
     cy: true,
-    Cypress: true
+    Cypress: true,
   },
   rules: {
-    quotes: "off",
-    "@typescript-eslint/quotes": [
+    quotes: 'off',
+    '@typescript-eslint/quotes': [
       2,
-      "backtick",
+      'backtick',
       {
-        avoidEscape: true
-      }
+        avoidEscape: true,
+      },
     ],
-    indent: ["error", 2, { SwitchCase: 1 }],
-    "prettier/prettier": "error"
-  }
+    indent: ['error', 2, { SwitchCase: 1 }],
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': 'off',
+  },
 };
