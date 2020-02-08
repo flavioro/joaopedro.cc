@@ -38,4 +38,12 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': 'off',
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
 };
