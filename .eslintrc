@@ -18,6 +18,7 @@
     "Cypress": true
   },
   "rules": {
+    "no-underscore-dangle": "off",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": "off",
     "import/prefer-default-export": "off",
@@ -26,7 +27,18 @@
     "react/forbid-prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "js": "never",
+        "jsx": "never"
+      }
+    ]
   },
   "overrides": [
     {

@@ -9,6 +9,7 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "skipLibCheck": true,
     "noImplicitAny": false,
@@ -16,7 +17,9 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"]
+      "@assets/*": ["assets/*"],
+      "@styles/*": ["styles/*"],
+      "@hooks/*": ["hooks/*"]
     }
   }
 }
